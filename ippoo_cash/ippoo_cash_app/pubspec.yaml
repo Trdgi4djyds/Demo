@@ -1,0 +1,18 @@
+name: ippoo_cash_app
+description: The frontend for IPPOO-CASH.
+version: 1.0.0
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  ippoo_cash_core:
+    path: ../packages/ippoo_cash_core
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
