@@ -22,4 +22,26 @@ class Transaction {
     required this.createdAt,
     this.documents = const [],
   });
+
+  Transaction copyWith({
+    String? id,
+    double? amount,
+    String? currency,
+    TransactionStatus? status,
+    SourceModule? source,
+    String? userId,
+    DateTime? createdAt,
+    List<FinancialDocument>? documents,
+  }) {
+    return Transaction(
+      id: id ?? this.id,
+      amount: amount ?? this.amount,
+      currency: currency ?? this.currency,
+      status: status ?? this.status,
+      source: source ?? this.source,
+      userId: userId ?? this.userId,
+      createdAt: createdAt ?? this.createdAt,
+      documents: documents ?? this.documents,
+    );
+  }
 }
