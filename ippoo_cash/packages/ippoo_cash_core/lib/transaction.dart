@@ -23,6 +23,35 @@ class Transaction {
     this.documents = const [],
   });
 
+  factory Transaction.fromJson(Map<String, dynamic> json) {
+    return Transaction(
+      id: json['id'],
+      amount: json['amount'],
+      currency: json['currency'],
+      status: _enumFromString(TransactionStatus.values, json['status']),
+      source: _enumFromString(SourceModule.values, json['source']),
+      userId: json['userId'],
+      createdAt: DateTime.parse(json['createdAt']),
+      documents: (json['documents'] as List<dynamic>?)
+              ?.map((docJson) => FinancialDocument.fromJson(docJson))
+              .toList() ??
+          [],
+    );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'amount': amount,
+      'currency': currency,
+      'status': status.toString().split('.').last,
+      'source': source.toString().split('.').last,
+      'userId': userId,
+      'createdAt': createdAt.toIso8601String(),
+      'documents': documents.map((doc) => doc.toJson()).toList(),
+    };
+  }
+
   Transaction copyWith({
     String? id,
     double? amount,
@@ -44,4 +73,9 @@ class Transaction {
       documents: documents ?? this.documents,
     );
   }
+}
+
+T _enumFromString<T>(List<T> values, String value) {
+  return values.firstWhere((v) => v.toString().split('.').last == value,
+      orElse: () => throw ArgumentError('Invalid enum value: $value'));
 }
