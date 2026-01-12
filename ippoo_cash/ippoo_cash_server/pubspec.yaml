@@ -1,0 +1,14 @@
+name: ippoo_cash_server
+description: The backend server for IPPOO-CASH.
+version: 1.0.0
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  shelf: ^1.2.0
+  shelf_router: ^1.1.0
+  ippoo_cash_core:
+    path: ../packages/ippoo_cash_core
+
+dev_dependencies:
+  test: ^1.16.0
