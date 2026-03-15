@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased font-display">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-3xl">rocket_launch</span>
+<h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">TechInsights</h1>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="blog_mobile.html">Articles</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="dashboard.html">Markets</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="tech_article.html">Tech</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">search</span>
+<input class="h-10 w-64 rounded-xl border-none bg-primary/5 pl-10 pr-4 text-sm focus:ring-2 focus:ring-primary/20 dark:bg-primary/10" placeholder="Rechercher..." type="text"/>
+</div>
+<button class="flex items-center justify-center rounded-full bg-primary/10 p-2 text-primary hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="relative h-[60vh] w-full overflow-hidden">
+<div class="absolute inset-0 bg-slate-900/40 z-10"></div>
+<img alt="Digital landscape visualization" class="h-full w-full object-cover" data-alt="Modern abstract digital landscape with glowing nodes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIWdSW0M9ryiTg0xWlgzIl_6DBp34mCvDigUZigqh9FkHgJ64hhzLSstZZHFQ4hZ8HTmroQiTd84LQpG-fsO585YCb1N2lEgN4qKdil_ZBlTBj_Y3SCOgvgjtH5H-ImxMaPlXyeA-eUEYt7XLR2Q5v6ZWasysDlRFLrzZ3UWiBGfRuficrPM4BCrXyEIVeBxBcVdqnJ6YjLq2O6cLSa8M08DlmnarcLNg6oFT7pxsCWZ1g7w3g0AEKUmIcBbT1LYHWjcAOx4lZ1RU"/>
+<div class="absolute bottom-0 left-0 right-0 z-20 bg-gradient-to-t from-background-light dark:from-background-dark to-transparent pt-32 pb-12">
+<div class="mx-auto max-w-4xl px-6">
+<div class="mb-6 flex flex-wrap gap-2">
+<span class="rounded-full bg-primary px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">Technologie</span>
+<span class="rounded-full bg-primary/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary dark:bg-primary/30">Web3</span>
+</div>
+<h1 class="text-4xl md:text-6xl font-black leading-tight tracking-tight text-slate-900 dark:text-white">
+                            Redonner le pouvoir aux créateurs : Une nouvelle ère numérique
+                        </h1>
+</div>
+</div>
+</div>
+<div class="mx-auto max-w-7xl px-6 py-12">
+<div class="flex flex-col lg:flex-row gap-16">
+<article class="flex-1 max-w-3xl mx-auto lg:mx-0">
+<div class="flex items-center gap-4 mb-10 pb-10 border-b border-primary/10">
+<img alt="Jean Dupont Profile" class="h-14 w-14 rounded-full object-cover ring-2 ring-primary/20" data-alt="Professional portrait of a middle-aged man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDckrnVLsHaFF9XZIX2vrDsUwaq1EcXVjTkL9TiY9BP9yMcP-zI8GlJ4YxW-2kn1uJF-jkGa0X31Ok1PeiGvJkoas2aD-_K_A10ctCkbdom-fSYrCFMIhmTi4LZ5cwFvQfMRTOOOSgPXFBx-lRvEsuvuaWzuSc2pXWh2eQpKYvSB9LGW0Ko2Dhfxgim_Yxb_ros9t4bZ7DkdBbr97BVUYCfu18nDiqfY-_5gjfgRmOkjD9d6Xl_0bD0aerq9u-RQxiqKZEDoGZHbSY"/>
+<div class="flex flex-col">
+<span class="font-bold text-lg text-slate-900 dark:text-white">Jean Dupont</span>
+<span class="text-sm text-slate-500 dark:text-slate-400">Publié le 24 Oct, 2023 • 8 min de lecture</span>
+</div>
+</div>
+<div class="prose prose-lg dark:prose-invert max-w-none space-y-6">
+<p class="text-xl leading-relaxed text-slate-700 dark:text-slate-300">
+                                Le paysage numérique actuel subit une transformation radicale. Alors que les plateformes centralisées ont longtemps dominé, une nouvelle vague de technologies décentralisées émerge pour redéfinir la propriété et le contrôle des données.
+                            </p>
+<p class="leading-relaxed">
+                                Depuis plus d'une décennie, l'économie de l'attention a favorisé les intermédiaires au détriment de ceux qui produisent réellement la valeur. Les créateurs de contenu se retrouvent souvent à la merci d'algorithmes opaques et de structures de revenus changeantes. Cependant, l'avènement de la blockchain et des protocoles ouverts change la donne.
+                            </p>
+<blockquote class="my-12 border-l-4 border-primary bg-primary/5 p-8 dark:bg-primary/10 italic">
+<p class="text-2xl font-semibold leading-snug text-slate-900 dark:text-white">
+                                    "Notre mission est de redonner le pouvoir aux utilisateurs finaux et de garantir une transparence totale dans chaque interaction numérique."
+                                </p>
+</blockquote>
+<h3 class="text-2xl font-bold pt-6">L'émergence des protocoles ouverts</h3>
+<p class="leading-relaxed">
+                                Contrairement aux silos de données fermés des réseaux sociaux traditionnels, les nouveaux protocoles permettent une interopérabilité sans précédent. Cela signifie qu'un créateur peut emporter son audience, son contenu et sa réputation d'une application à une autre, brisant ainsi les chaînes de l'enfermement propriétaire.
+                            </p>
+<figure class="my-10">
+<img alt="Security and Decentralization" class="rounded-xl shadow-xl" data-alt="High-tech server room with blue and orange lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXWidY-n1NeAk58MYjDapHhMvlZfcX7wWv9iBVqCjnLwWV4q69WbISRDQx1TRZDSkB_i_3hYUUKDPx5pt0tHCxhyxBmL3WCKpTKjx7rwWz9Bqi3wXSnkiS2qP-ykbsiIbgRfDIA1-ko_fbRFR4FKpUjliKkG-j6RzHlln6iwc9YOGNRWSiDd_Y0U49-VhjQI-wbENUpNLCtBCQI_8X3xC9GbpkvWhOdnrGUrHRGagkBhIRwko9qdTmPy9f2TEdE5KkEq6L7Ya_aiw"/>
+<figcaption class="mt-4 text-center text-sm text-slate-500 italic">La décentralisation au cœur de l'infrastructure moderne.</figcaption>
+</figure>
+<p class="leading-relaxed">
+                                En conclusion, nous ne sommes qu'au début de cette révolution. La technologie n'est qu'un outil ; c'est la volonté collective de construire un web plus équitable qui déterminera le succès de cette transition. Le pouvoir n'est plus seulement dans le code, il est entre les mains de ceux qui créent.
+                            </p>
+</div>
+</article>
+<aside class="w-full lg:w-80 space-y-12">
+<div>
+<h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">bookmark</span>
+                                Articles similaires
+                            </h3>
+<div class="space-y-6">
+<div class="group cursor-pointer">
+<div class="mb-3 overflow-hidden rounded-lg">
+<img alt="Future of Hardware" class="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Macro photo of a computer processor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0ybinXU4p8Iq7b4H1lp5KRlZpK8_YiKilCs7FNqGbH1X6qq1-StXU8xCVHTqQoatoeWg13sFWluN7bRr8ZVPPpB7e7JOkHttq5H-_Aca9YtBE8-lidRDl_u0SAFZnrjzh1sCdkNf0sZAyIs2TVSgZqZjZW9eiKsFFhlFWS6XB_koqmcpxb27VaiaKk8rQIIHQTzZD8gCT8V0iEwCMARrARKH6UZy0qZd7xYFIvvM7WJxYS7tgCRJmylFdn-Y4vWhK1WCZHEMUmao"/>
+</div>
+<h4 class="font-bold leading-tight hover:text-primary">L'évolution du matériel informatique en 2024</h4>
+<p class="text-xs text-slate-500 mt-2">5 min de lecture</p>
+</div>
+<div class="group cursor-pointer">
+<div class="mb-3 overflow-hidden rounded-lg">
+<img alt="Network connectivity" class="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Graphic showing global network connectivity points" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOp6Ad8x2ELHHENAG0ndWHmrn3ULhxtMbU8A3GM6vd0YT5NLeeXpY8zWMtOQ2qPIazRpS7z7op2lHHqUIU6rBxOk0HP4cTbhOXIYl6GsiFDy0_TO1gvaoHIsx2aAfi6ohZqRJ_6RmYx7bm-aVsYS_KZ0muEUZP26XwdoZ6DuJFNMR4vy2f_3C8JIasIk9JRJNOPwX8rzjCOw0W7zVXcTgpoufAZ-EIURgZGwbxfIw8p32bIm_0aAi1WEFpnJ9lY9XlRqx7wiqN04s"/>
+</div>
+<h4 class="font-bold leading-tight hover:text-primary">Comprendre la 5G et au-delà</h4>
+<p class="text-xs text-slate-500 mt-2">12 min de lecture</p>
+</div>
+</div>
+</div>
+<div class="rounded-xl bg-primary/10 p-6 dark:bg-primary/20">
+<h3 class="text-lg font-bold mb-2">Restez informé</h3>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Recevez nos meilleures analyses chaque semaine.</p>
+<input class="mb-3 w-full rounded-lg border-none bg-background-light px-4 py-2 text-sm dark:bg-background-dark focus:ring-1 focus:ring-primary" placeholder="votre@email.com" type="email"/>
+<button class="w-full rounded-lg bg-primary py-2 text-sm font-bold text-white hover:bg-primary/90 transition-colors">S'abonner</button>
+</div>
+</aside>
+</div>
+</div>
+</main>
+<footer class="fixed bottom-0 left-0 right-0 z-40 bg-background-light/95 dark:bg-background-dark/95 border-t border-primary/10 backdrop-blur-sm">
+<div class="mx-auto max-w-4xl flex items-center justify-between px-6 py-4">
+<div class="flex items-center gap-6">
+<button class="flex items-center gap-2 group">
+<span class="material-symbols-outlined text-slate-500 group-hover:text-primary group-hover:fill-primary transition-all">favorite</span>
+<span class="text-sm font-bold">1.2k</span>
+</button>
+<button class="flex items-center gap-2 group">
+<span class="material-symbols-outlined text-slate-500 group-hover:text-primary transition-all">chat_bubble</span>
+<span class="text-sm font-bold">48</span>
+</button>
+<button class="flex items-center gap-2 group">
+<span class="material-symbols-outlined text-slate-500 group-hover:text-primary transition-all">share</span>
+</button>
+</div>
+<div class="flex items-center gap-4">
+<button class="rounded-full bg-primary px-6 py-2.5 text-sm font-bold text-white shadow-lg shadow-primary/20 hover:scale-105 transition-transform active:scale-95">
+                        Soutenir l'auteur
+                    </button>
+</div>
+</div>
+</footer>
+<div class="h-24"></div>
+</div>
+</body></html>

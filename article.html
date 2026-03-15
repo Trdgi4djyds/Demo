@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;family=Poppins:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"],
+                        "poppins": ["Poppins", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="flex items-center justify-between p-4 max-w-2xl mx-auto">
+<a href="index.html" class="flex items-center justify-center size-10 rounded-full hover:bg-primary/10 text-slate-900 dark:text-slate-100 transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</a>
+<div class="flex gap-2">
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-primary/10 text-slate-900 dark:text-slate-100 transition-colors">
+<span class="material-symbols-outlined">bookmark</span>
+</button>
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-primary/10 text-slate-900 dark:text-slate-100 transition-colors">
+<span class="material-symbols-outlined">share</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-2xl mx-auto pb-24">
+<!-- Hero Section -->
+<div class="relative w-full aspect-video md:aspect-[21/9] overflow-hidden">
+<div class="w-full h-full bg-center bg-cover" data-alt="A vibrant local marketplace with fresh produce and shoppers" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCc7X0Lx7Dms2O27MFrg8oyEHnofPkG3nBFOZJqk4uqgvNXQ-I8OkGP2_e9OW0XxlMcX_58fUz-3RjLNTlNkT5d9joKK1V15YZh_b6-P8_P3hropFleLkbW1CvFB_nIH4sgLwk1r8GINf5xE2SXhO0-IyWeYT_DTQMJgskjh9NGx6R2OB1gKPxJBh6tCwI7jO1f0aYImEcnETXo9HX2dNUGbje9iDWSAE2kUzoVI3_Cv5BeP83x8tsrRGvY3Ghvvj9LE4RDPMRA4Wc');">
+</div>
+</div>
+<!-- Article Content -->
+<article class="px-5 pt-6">
+<div class="flex gap-3 mb-4">
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold uppercase tracking-wider">
+                    Commerce Local
+                </span>
+</div>
+<h1 class="text-3xl md:text-4xl font-bold leading-tight mb-6">
+                Comment IPPOO transforme le commerce de proximité
+            </h1>
+<!-- Author & Meta -->
+<div class="flex items-center gap-4 mb-8 border-b border-primary/10 pb-6">
+<div class="size-12 rounded-full bg-center bg-cover border-2 border-primary/20" data-alt="Portrait of the author Jean Dupont" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCcoj_faJv6BgeHIOC44d2dUGXkhI6PrprLSxw6zuW_guYgEA1PhRqOxf81MWnZvE62c45LyRzic0J1QZVBq4vxijIJ658U8D1iq0oluXg6x09Wt8pbtRyfG4G3_jTuN7tIZEe-AgSjZznEh3htT7tLIlunmGjgwrDW9KGATDlH4gFkrSxp1CbUZ0Pzu2R3QU7e3mFf50BTd84QkQRUbOeoZXQcA6c2wgvP1e3Qtok3UldGGfQtW8ZK6rMoV7sImgecHrV_nkf5CZ0');"></div>
+<div class="flex flex-col">
+<span class="font-semibold text-base">Jean Dupont</span>
+<span class="text-slate-500 dark:text-slate-400 text-sm">24 Oct, 2023 • Lecture : 5 min</span>
+</div>
+</div>
+<!-- Body Text -->
+<div class="prose dark:prose-invert max-w-none space-y-6 text-slate-700 dark:text-slate-300 leading-relaxed text-lg">
+<p>
+                    Le paysage du commerce local connaît une révolution sans précédent. Dans un monde dominé par les géants du numérique, les petits commerçants trouvent enfin un allié de poids avec <strong>IPPOO</strong>.
+                </p>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 pt-4">La proximité réinventée</h2>
+<p>
+                    IPPOO ne se contente pas de numériser des catalogues. La plateforme crée un véritable pont émotionnel et logistique entre le producteur et le consommateur urbain, en optimisant les circuits courts.
+                </p>
+<blockquote class="border-l-4 border-primary pl-6 py-2 my-8 italic text-xl font-medium text-slate-900 dark:text-slate-100 bg-primary/5 rounded-r-xl">
+                    "Notre mission est de redonner le pouvoir aux artisans locaux en leur offrant une visibilité digitale digne des plus grands."
+                </blockquote>
+<div class="my-8 rounded-xl overflow-hidden shadow-lg">
+<img alt="Fresh local organic vegetables in a basket" class="w-full" data-alt="Close up of fresh organic vegetables in a wooden basket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjxU35th3ZdsDyYSXpaGHfXbBlBPKnWlmhW4mMUSu7tOW86OPU3QSN2ozU75HMKMA4JzMf8OncjbQxDip16xmIZXcNWyZwliA7T9627ega3pXxqvyLERDBbHiHOPu09ZfHMGttxaNojBmSMTDjbCUi2dmaeRARzq8X-gQshUfdF92AmoM5QHq9gUx2fQHiWuLtLJoQHK16xa7omRgoQMF4CAHpv3pOi9ciqPt4oWhcXiAfzKnuohu4bUyXZZdqU5DqpRqJYVIE8pQ"/>
+</div>
+<p>
+                    Grâce à une interface intuitive et des solutions logistiques intégrées, IPPOO permet aux commerçants de se concentrer sur ce qu'ils font de mieux : leurs produits et leur savoir-faire.
+                </p>
+</div>
+</article>
+<!-- Similar Articles -->
+<section class="mt-12 px-5">
+<h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">article</span>
+                Articles similaires
+            </h3>
+<div class="grid grid-cols-1 gap-4">
+<div class="flex gap-4 p-3 rounded-xl bg-white dark:bg-slate-800/50 shadow-sm border border-primary/5">
+<div class="w-24 h-24 shrink-0 rounded-lg bg-center bg-cover" data-alt="Modern digital payment terminal on a counter" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDkU-wx0Y7cPonYE-fYb13qXasL9Opbv-7rcG5URbWJlZF4t_mBacXcUg3emT4keOrcx_d529CjsT8yO56Pzy7W_9M3K1MTao2jFhbb6uIgagLKT2PshxlqqAC2tDx6W4Z5ZbR8oR-vIK99WP0zM0bnrj_ZFlqhlRjn_5pz13Z-9rmZj6PNktShPxYhIFsmfiOqM4opNva-zKf5fKEbBNuvx1liOtPdXSt10v7cggJctNpme6uGnUDOOMieJoswCi6QiCIvVhwwGGM');"></div>
+<div class="flex flex-col justify-center">
+<span class="text-[10px] font-bold text-primary uppercase mb-1">Technologie</span>
+<h4 class="font-semibold text-sm line-clamp-2">L'avenir du paiement sans contact dans nos quartiers</h4>
+<span class="text-xs text-slate-500 dark:text-slate-400 mt-1">3 min de lecture</span>
+</div>
+</div>
+<div class="flex gap-4 p-3 rounded-xl bg-white dark:bg-slate-800/50 shadow-sm border border-primary/5">
+<div class="w-24 h-24 shrink-0 rounded-lg bg-center bg-cover" data-alt="Eco-friendly packaging for local goods" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAczMsMIoJUo7A-bpp1k0jhvzAw2th60Xer8k337pdIJXpPHcbqdqDXYg2AA-ijuUc6kHlK9KrKxQP3wGxe34xF73qOc8wPc41RJ5wcHZZIjhABMnb6YiVc-1ZR9NeBQDGnt9N0nhCevLyoiZTfsZC9qqV9D6LTrs8DoE2FYyLtBxfuQA4qtP8WWCfSSdZkwlVIPjUQsiEZE-DAzVb7COar4gP7QN0gGuKnWfVk4BQ3yiQTypfwViEkfTJbO9iU-lKf3F6QZH-fSWc');"></div>
+<div class="flex flex-col justify-center">
+<span class="text-[10px] font-bold text-primary uppercase mb-1">Durabilité</span>
+<h4 class="font-semibold text-sm line-clamp-2">Éco-conception : IPPOO s'engage pour le climat</h4>
+<span class="text-xs text-slate-500 dark:text-slate-400 mt-1">4 min de lecture</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Interaction Bar -->
+<footer class="fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-background-dark/95 backdrop-blur-md border-t border-primary/10 px-4 py-3 z-50">
+<div class="max-w-2xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-6">
+<a href="blog_mobile.html" class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined">home</span>
+</a>
+<button class="flex items-center gap-2 text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+<span class="text-sm font-medium">1.2k</span>
+</button>
+<button class="flex items-center gap-2 text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">mode_comment</span>
+<span class="text-sm font-medium">42</span>
+</button>
+</div>
+<div class="flex items-center gap-2">
+<button class="bg-primary text-white px-6 py-2 rounded-full font-semibold text-sm shadow-lg shadow-primary/20 active:scale-95 transition-all">
+                    Suivre IPPOO
+                </button>
+</div>
+</div>
+</footer>
+</body></html>

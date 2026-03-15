@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ec5b13",
+              "background-light": "#f8f6f6",
+              "background-dark": "#221610",
+            },
+            fontFamily: {
+              "display": ["Public Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: "Public Sans", sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header / Navigation Bar -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-[1280px] mx-auto px-6 py-4 flex items-center justify-between gap-8">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-4xl">insights</span>
+<h2 class="text-xl font-black leading-tight tracking-tight dark:text-white">IPPOO <span class="text-primary">Blog</span></h2>
+</div>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="text-slate-700 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="blog_mobile.html">Articles</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="dashboard.html">Markets</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="tech_article.html">Tech</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end items-center gap-4">
+<div class="relative max-w-md w-full hidden md:block">
+<a href="search_desktop.html">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="w-full bg-slate-100 dark:bg-slate-800 border-none rounded-xl py-2 pl-10 pr-4 text-sm focus:ring-2 focus:ring-primary/50 cursor-pointer" placeholder="Search markets, news, analysis..." type="text" readonly/>
+</a>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-primary/10 hover:text-primary transition-all">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-primary/10 hover:text-primary transition-all">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-[1280px] mx-auto w-full px-6 py-8">
+<!-- Hero Section -->
+<section class="relative rounded-xl overflow-hidden mb-12 min-h-[500px] flex items-end group">
+<div class="absolute inset-0 bg-slate-900">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" data-alt="Financial trading screens in a dark room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLGDRxUn97tt1VfF4d5mUJS-A_xNEqcumAYhWRl3v4_IR69ZgSanzfb7n8mbq-RwjaL5xTK3Jvj_s-nU4ItGp-DLj9dxNz14NRxuhsnFaIeDJpKpQJgW-2JSXO-QvZ1kggV1agAhk25zt6_WF-NsaP6zzzYX6lUCX2J9McVeIo-MjpDHNL3Ph0IEM8cQfiUd2YQ2XGzlhPQMLcoxTSpuBnWN4hHoEErW9qcHRUbdPwrKpf1QHLf0jNaGs0tyR72vrK2jYnHe99NSc"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+<div class="relative z-10 p-8 lg:p-16 max-w-4xl">
+<div class="flex gap-4 mb-6">
+<span class="bg-primary px-3 py-1 rounded-full text-white text-xs font-bold tracking-widest uppercase">Featured Analysis</span>
+<span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-white text-xs font-bold uppercase">15k+ Readers</span>
+</div>
+<h1 class="text-white text-4xl lg:text-6xl font-black leading-tight tracking-tighter mb-6">
+                        Mastering the Art of Investment: The IPPOO Guide to 2024
+                    </h1>
+<p class="text-slate-200 text-lg lg:text-xl font-medium mb-8 max-w-2xl">
+                        Join our community of over 15,000 active readers and explore our library of 120+ deep-dive articles on global financial markets and emerging tech.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a href="article.html" class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl font-bold transition-all flex items-center gap-2">
+                            Read Featured Article <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<button class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-xl font-bold transition-all">
+                            Explore Archives
+                        </button>
+</div>
+</div>
+</section>
+<!-- Category Filters -->
+<div class="flex items-center gap-3 overflow-x-auto pb-4 mb-8 no-scrollbar">
+<button class="flex h-10 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-white px-6 font-semibold">
+<span class="text-sm">All Topics</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-2 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 px-6 font-semibold transition-all">
+<span class="material-symbols-outlined text-sm">currency_bitcoin</span>
+<span class="text-sm">Cryptocurrency</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-2 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 px-6 font-semibold transition-all">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span class="text-sm">Stock Market</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-2 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 px-6 font-semibold transition-all">
+<span class="material-symbols-outlined text-sm">apartment</span>
+<span class="text-sm">Real Estate</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-2 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 px-6 font-semibold transition-all">
+<span class="material-symbols-outlined text-sm">account_balance_wallet</span>
+<span class="text-sm">Personal Finance</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-2 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 px-6 font-semibold transition-all">
+<span class="material-symbols-outlined text-sm">rocket_launch</span>
+<span class="text-sm">Tech Trends</span>
+</button>
+</div>
+<!-- Main Grid Content -->
+<div class="flex flex-col lg:flex-row gap-10">
+<!-- Left: Article List -->
+<div class="flex-1">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl font-bold tracking-tight">Latest Analysis</h2>
+<a class="text-primary font-semibold text-sm hover:underline" href="blog_mobile.html">View All</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Article Card -->
+<a href="article.html" class="flex flex-col gap-4 group">
+<div class="aspect-video rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Stock market growth charts and data visualization" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC44u7o5D3Biv1txapnF1FQ7ETduVlLwY-aPGCQ858UHJDBB_jb6uyIvRTDGBTO59_52jW1R8YPQkTcZ9Y32maIN_3A9KgqzoJH9FNj0QArF_GoYlNJ9Cko-t2kQIN0Jr-3_vcXDN3KEE5tuUUSSJJK5RDcWQ95DhBfnZ7dMuMvWoYDjzHJgBg7NP_v_hyPoWqFt8Kp3NBEhWREyneOhuUpAchzOFPQrQiSNAg9ybE2hm9qsxZy8tBEuopD6VsYXOm9ilcGv4i2eGM"/>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-primary text-xs font-bold uppercase">Tech Trends</span>
+<h3 class="text-xl font-bold leading-snug group-hover:text-primary transition-colors">The Future of Fintech: Digital Banking in 2024</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm line-clamp-2">How neobanks are reshaping the landscape of retail finance and what investors should look for in the coming year.</p>
+<div class="flex items-center gap-3 mt-2">
+<div class="w-8 h-8 rounded-full bg-primary/20"></div>
+<div class="text-xs">
+<p class="font-bold">Jean-Paul Dupont</p>
+<p class="text-slate-400">Nov 12, 2023 • 6 min read</p>
+</div>
+</div>
+</div>
+</a>
+<!-- Article Card -->
+<a href="tech_article.html" class="flex flex-col gap-4 group">
+<div class="aspect-video rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Golden bitcoin coin on a digital background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa9xTIxD08sRLt9QAHFZkpCzIuvBEMXOoZofOc6DpXw-NzCuihwzlw9ez-jmVlNaZORxG6QwFQMPSomWaToluwrsEa_OiduqnpzF0RIVp32yaQqWLVy8KFq0a-SnGIfhrgC5_Puw8zliI2BcdzBjiOZeEFrWWqB5dkmjP3jhcSBst0JDqb-nqZIsGSEytpBlcZ4wwjRGx7-rcwOfv3RM6PJXaljwxG12_wYD5JgMy2OS4xIQIQ0DiUju8PippqDTPEiXxfjSD_wTU"/>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-primary text-xs font-bold uppercase">Cryptocurrency</span>
+<h3 class="text-xl font-bold leading-snug group-hover:text-primary transition-colors">Yield Curves and Digital Assets</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm line-clamp-2">Understanding the correlation between treasury yields and the volatility of top-tier cryptocurrencies.</p>
+<div class="flex items-center gap-3 mt-2">
+<div class="w-8 h-8 rounded-full bg-primary/20"></div>
+<div class="text-xs">
+<p class="font-bold">Marie Laurent</p>
+<p class="text-slate-400">Nov 10, 2023 • 8 min read</p>
+</div>
+</div>
+</div>
+</a>
+<!-- Article Card -->
+<div class="flex flex-col gap-4 group">
+<div class="aspect-video rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Minimalist financial charts on paper and laptop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0x9MctsiNAVTrJ8h2ejLRagGsXVc74jjs13uWYTaofG96eFyLC8HkkG_QW_I-hmdfHtl3QjIdUUaVMErOThyOqFTdJRQK5ZBfpil5jaPraaxT7Irwo1A_lFEQpejBx1SCWisYDaSiAxIE_vxtuZ3UnH8X8rVwnJsTJfnXSKb_CenR5iqEsb3Odaz64o1niVuO8oLkqPJR_QXEjeYIRQR7mhyZlY3CAAp0j07bHjpGpbcil3xydYnVY53SwSWMCu0yRg72JrV8jY0"/>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-primary text-xs font-bold uppercase">Stock Market</span>
+<h3 class="text-xl font-bold leading-snug group-hover:text-primary transition-colors">Top 10 Stocks for Your Q4 Portfolio</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm line-clamp-2">A comprehensive analysis of current market leaders and undervalued opportunities in the green energy sector.</p>
+<div class="flex items-center gap-3 mt-2">
+<div class="w-8 h-8 rounded-full bg-primary/20"></div>
+<div class="text-xs">
+<p class="font-bold">Thomas Meyer</p>
+<p class="text-slate-400">Nov 08, 2023 • 12 min read</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Article Card -->
+<div class="flex flex-col gap-4 group">
+<div class="aspect-video rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Modern architecture with glass facade" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNme-dgRSnUXBdpGSYWhCHkbZtAAsKG2aCweH1lEut7HVGVqo5TglfiKrMUHA-yg7UeZFi6-ZIR0uCSs8M0vPD5HZbGeP2vBo2ziydNEOw5dOZZxen_Q2YCgVIQivW59A9uFiD-FkONA--R6HnRlovRVs7aglVRPAPf3IrlLay9H3JBjGQCNoSnRfKMlOIB70ps5DQwnG4hI1-1ac-29L-kKnaBUyHR0kQLPrFaltF22uw_r1V8Y1ubAtEMF-5LMUfjuZDXY11UJM"/>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-primary text-xs font-bold uppercase">Real Estate</span>
+<h3 class="text-xl font-bold leading-snug group-hover:text-primary transition-colors">The Commercial Real Estate Pivot</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm line-clamp-2">How office spaces are being reimagined and the investment implications for REITs.</p>
+<div class="flex items-center gap-3 mt-2">
+<div class="w-8 h-8 rounded-full bg-primary/20"></div>
+<div class="text-xs">
+<p class="font-bold">Sarah Connor</p>
+<p class="text-slate-400">Nov 05, 2023 • 5 min read</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Sidebar -->
+<aside class="w-full lg:w-[320px] flex flex-col gap-10">
+<!-- Real Time Widget -->
+<div class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-primary">query_stats</span>
+<h3 class="font-bold">Cotation en temps réel</h3>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-bold text-sm">CAC 40</span>
+<span class="text-xs text-slate-400">Paris</span>
+</div>
+<div class="text-right">
+<p class="font-bold text-sm">7,243.50</p>
+<p class="text-xs text-green-500 font-bold">+0.45%</p>
+</div>
+</div>
+<div class="flex items-center justify-between border-t border-slate-50 dark:border-slate-700 pt-4">
+<div class="flex flex-col">
+<span class="font-bold text-sm">NASDAQ</span>
+<span class="text-xs text-slate-400">New York</span>
+</div>
+<div class="text-right">
+<p class="font-bold text-sm">14,284.53</p>
+<p class="text-xs text-red-500 font-bold">-0.12%</p>
+</div>
+</div>
+<div class="flex items-center justify-between border-t border-slate-50 dark:border-slate-700 pt-4">
+<div class="flex flex-col">
+<span class="font-bold text-sm">BTC / USD</span>
+<span class="text-xs text-slate-400">Crypto</span>
+</div>
+<div class="text-right">
+<p class="font-bold text-sm">37,420.00</p>
+<p class="text-xs text-green-500 font-bold">+2.14%</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Most Read Section -->
+<div class="flex flex-col gap-6">
+<h3 class="font-bold text-lg border-b border-primary/20 pb-2">Les plus lus</h3>
+<div class="flex flex-col gap-6">
+<a class="flex gap-4 group" href="#">
+<span class="text-3xl font-black text-slate-200 dark:text-slate-700 shrink-0">01</span>
+<div class="flex flex-col gap-1">
+<h4 class="text-sm font-bold leading-tight group-hover:text-primary transition-colors">Pourquoi l'or reste le refuge ultime en 2024 ?</h4>
+<p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Macro-Économie</p>
+</div>
+</a>
+<a class="flex gap-4 group" href="#">
+<span class="text-3xl font-black text-slate-200 dark:text-slate-700 shrink-0">02</span>
+<div class="flex flex-col gap-1">
+<h4 class="text-sm font-bold leading-tight group-hover:text-primary transition-colors">Guide complet sur les ETFs indexés sur le S&amp;P 500</h4>
+<p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Investissement</p>
+</div>
+</a>
+<a class="flex gap-4 group" href="#">
+<span class="text-3xl font-black text-slate-200 dark:text-slate-700 shrink-0">03</span>
+<div class="flex flex-col gap-1">
+<h4 class="text-sm font-bold leading-tight group-hover:text-primary transition-colors">L'IA générative : Quels impacts sur les actions tech ?</h4>
+<p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Technologie</p>
+</div>
+</a>
+</div>
+</div>
+<!-- Promo Banner -->
+<div class="relative rounded-xl overflow-hidden aspect-[3/4] bg-primary/10 flex items-center justify-center p-6 text-center border-2 border-dashed border-primary/30">
+<div class="flex flex-col gap-4">
+<span class="material-symbols-outlined text-5xl text-primary">auto_awesome</span>
+<h3 class="font-black text-xl">Devenez Membre Premium</h3>
+<p class="text-sm text-slate-600 dark:text-slate-400">Accédez à des analyses exclusives et des alertes marchés en temps réel.</p>
+<button class="bg-primary text-white py-3 rounded-xl font-bold">En savoir plus</button>
+</div>
+</div>
+</aside>
+</div>
+<!-- Newsletter Section -->
+<section class="mt-20 mb-12">
+<div class="bg-slate-900 rounded-3xl p-8 lg:p-16 flex flex-col lg:flex-row items-center gap-10 overflow-hidden relative">
+<div class="absolute right-0 top-0 w-1/3 h-full bg-primary/20 blur-[100px] -z-0"></div>
+<div class="flex-1 z-10">
+<h2 class="text-white text-3xl lg:text-4xl font-black mb-4">Never miss an update.</h2>
+<p class="text-slate-400 text-lg">Subscribe to our weekly newsletter and join 15,000+ readers getting the best market insights straight to their inbox.</p>
+</div>
+<div class="w-full lg:w-auto min-w-[400px] z-10">
+<form class="flex flex-col md:flex-row gap-4">
+<input class="flex-1 bg-slate-800 border-slate-700 rounded-xl px-6 py-4 text-white focus:ring-primary" placeholder="Your email address" type="email"/>
+<button class="bg-primary hover:bg-primary/90 text-white font-bold px-8 py-4 rounded-xl transition-all" type="submit">Subscribe Now</button>
+</form>
+<p class="text-[10px] text-slate-500 mt-4 text-center md:text-left">By subscribing, you agree to our Privacy Policy and Terms of Service.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 py-16">
+<div class="max-w-[1280px] mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-3xl">insights</span>
+<h2 class="text-lg font-black tracking-tight dark:text-white uppercase">IPPOO Blog</h2>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                            Leading the way in financial market analysis and investment education. Providing clarity in a complex global economy since 2018.
+                        </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">link</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-slate-900 dark:text-white uppercase text-xs tracking-widest">Categories</h4>
+<ul class="flex flex-col gap-2">
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary transition-colors" href="#">Stock Market</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary transition-colors" href="#">Cryptocurrency</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary transition-colors" href="#">Real Estate</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary transition-colors" href="#">Wealth Management</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-slate-900 dark:text-white uppercase text-xs tracking-widest">Resources</h4>
+<ul class="flex flex-col gap-2">
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary transition-colors" href="#">Market Glossary</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary transition-colors" href="#">Investment Tools</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary transition-colors" href="#">Newsletter Archive</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary transition-colors" href="#">Partner Program</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-slate-900 dark:text-white uppercase text-xs tracking-widest">Contact</h4>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Have a story idea or partnership proposal?</p>
+<a class="text-primary font-bold text-sm" href="mailto:contact@ippoo.blog">contact@ippoo.blog</a>
+<p class="text-slate-500 dark:text-slate-400 text-sm">75008 Paris, France</p>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-400 text-[10px] uppercase font-bold tracking-widest">© 2024 IPPOO MEDIA GROUP. ALL RIGHTS RESERVED.</p>
+<div class="flex gap-6">
+<a class="text-slate-400 text-[10px] uppercase font-bold tracking-widest hover:text-primary" href="#">Privacy Policy</a>
+<a class="text-slate-400 text-[10px] uppercase font-bold tracking-widest hover:text-primary" href="#">Terms of Service</a>
+<a class="text-slate-400 text-[10px] uppercase font-bold tracking-widest hover:text-primary" href="#">Cookies</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

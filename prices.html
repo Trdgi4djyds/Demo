@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                        "teal-accent": "#0d9488",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+        .material-symbols-outlined { font-size: 24px; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<div class="relative flex min-h-screen w-full max-w-md mx-auto flex-col overflow-x-hidden pb-32">
+<!-- Header -->
+<header class="sticky top-0 z-20 flex items-center bg-background-light dark:bg-background-dark p-4 gap-4 border-b border-slate-200 dark:border-slate-800">
+<a href="index.html" class="flex items-center justify-center p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">arrow_back</span>
+</a>
+<h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Cotation &amp; Prix</h1>
+</header>
+<!-- Category Tabs -->
+<div class="sticky top-[73px] z-10 bg-background-light dark:bg-background-dark overflow-x-auto no-scrollbar border-b border-slate-200 dark:border-slate-800">
+<div class="flex px-4 py-3 gap-3 whitespace-nowrap">
+<a class="px-4 py-2 rounded-full bg-teal-accent text-white text-sm font-semibold" href="#">Cotation &amp; Prix</a>
+<a class="px-4 py-2 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm font-semibold" href="blog_mobile.html">Actualités</a>
+<a class="px-4 py-2 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm font-semibold" href="tech_article.html">Tech</a>
+<a class="px-4 py-2 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm font-semibold" href="search_mobile.html">Search</a>
+</div>
+</div>
+<!-- Results Count -->
+<div class="px-4 py-5">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100">12 articles</h2>
+</div>
+<!-- Article List -->
+<div class="flex flex-col gap-6 px-4">
+<!-- Article Card 1 -->
+<div class="flex items-start justify-between gap-4 group">
+<div class="flex flex-col gap-2 flex-1">
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium uppercase tracking-wider">5 min • 1.2k vues • 24 Oct</p>
+<h3 class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight group-hover:text-primary transition-colors">Évolution du prix du maïs sur le marché d'Abidjan</h3>
+<span class="inline-flex w-fit px-2 py-1 rounded bg-teal-accent/10 text-teal-accent text-[10px] font-bold uppercase">Cotation &amp; Prix</span>
+</div>
+<div class="w-24 h-24 shrink-0 bg-center bg-no-repeat bg-cover rounded-xl shadow-sm" data-alt="Stock de maïs sur un marché local" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCD-Wie_fLxvYXK-rlDACLys0PiPVLXCCIanJPDkn-W1qGloeDDenfQK6u0zl5gHFmp3VR-5G8qbNRDMjI1D_4DWF8IqLCoa6-l2_DUVeIwM0ezBmqMnNMU5CSug7RSLRvEY5G3ft5mrkke3rpsF8HuACgYZO4WDGncqtcG9zOjQ9HHbGcGYq7x1RRXJeaXj6-gPsx6AltYjnTYk7WAV4hCTtz51_DzRJerm4g1S_Sbym_hlgD8QYe3XKqy4YO7j5q5lfrSt_3Ny_M");'></div>
+</div>
+<!-- Divider -->
+<hr class="border-slate-200 dark:border-slate-800"/>
+<!-- Article Card 2 -->
+<div class="flex items-start justify-between gap-4 group">
+<div class="flex flex-col gap-2 flex-1">
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium uppercase tracking-wider">3 min • 850 vues • 22 Oct</p>
+<h3 class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight group-hover:text-primary transition-colors">Le cours mondial du cacao : Tendances pour novembre</h3>
+<span class="inline-flex w-fit px-2 py-1 rounded bg-teal-accent/10 text-teal-accent text-[10px] font-bold uppercase">Cotation &amp; Prix</span>
+</div>
+<div class="w-24 h-24 shrink-0 bg-center bg-no-repeat bg-cover rounded-xl shadow-sm" data-alt="Fèves de cacao en gros plan" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAKn-ieQL5R4VgtHRKDc-uC0nW4q8msMWmsiBI1g8MKYzNXq0gGzofvOrL76BylOSon0_TcRxZ1CDeiF0mqRU4BFX-IcK5IrXj72cFLIAViWbheX89k8yfxEmdrSOdo2W3EvLiaNR_3AIVrVGoRhAHJwjzUBDZCAkRAn7N1B-IeZowsE_65ZxusUOen9OmdmwCh1Ot2KaqLwwwNfx8PKaAKPXcnp2Difk7HA3AUWrZMP0fB5RK-EpZBxkg3-CvS3j4CWGaDzynr3KI");'></div>
+</div>
+<!-- Divider -->
+<hr class="border-slate-200 dark:border-slate-800"/>
+<!-- Article Card 3 -->
+<div class="flex items-start justify-between gap-4 group">
+<div class="flex flex-col gap-2 flex-1">
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium uppercase tracking-wider">7 min • 2.4k vues • 20 Oct</p>
+<h3 class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight group-hover:text-primary transition-colors">Impact des pluies sur les prix du transport de marchandises</h3>
+<span class="inline-flex w-fit px-2 py-1 rounded bg-teal-accent/10 text-teal-accent text-[10px] font-bold uppercase">Logistique</span>
+</div>
+<div class="w-24 h-24 shrink-0 bg-center bg-no-repeat bg-cover rounded-xl shadow-sm" data-alt="Camion de transport sur une route rurale" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAUMEt4s_3HoubC7NbBPWeE_UNuaGDMqUm-YwkoDq25uC5ClcZouttBo4FGt7yeidHl8G79KvXcay3VRPaPXc1ZuClnNyMmoymMQFr-7l6Km4SjXnIXqAZS21_m5m-H40E6vLilXSkCsQ10pKB71GKwAhwjUmSiIQFzPBRqAGJx_F9H-_Cp2gPhKlhzRhwhpBnWSHh7Wid17Yrta6gC6BHPc5C5loJtT7ZKj3WxZ0kwp_2zFfwn-PNc7Lh7Tr9TPwc1m3NRW8lk0BQ");'></div>
+</div>
+<!-- Divider -->
+<hr class="border-slate-200 dark:border-slate-800"/>
+<!-- Article Card 4 -->
+<div class="flex items-start justify-between gap-4 group">
+<div class="flex flex-col gap-2 flex-1">
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium uppercase tracking-wider">4 min • 1.1k vues • 18 Oct</p>
+<h3 class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight group-hover:text-primary transition-colors">Noix de cajou : Ouverture de la campagne de commercialisation</h3>
+<span class="inline-flex w-fit px-2 py-1 rounded bg-teal-accent/10 text-teal-accent text-[10px] font-bold uppercase">Cotation &amp; Prix</span>
+</div>
+<div class="w-24 h-24 shrink-0 bg-center bg-no-repeat bg-cover rounded-xl shadow-sm" data-alt="Récolte de noix de cajou fraîches" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDldM4Khkr1vQUcBfN4VcIJK6_7x0eVz7Q1LqXWfc6aXAZnhFcxRJAb240q_KLadyYXUW4ouRkKgHr4FxL-n65CwjJauQhAQG4Nx1C0G457Il69FftipJ2hu4zdcU6baLm7pJdiiE9XFaLm73a-BWGt562q8o_b-PrckNYytes6keKPjOuHhGiWLvQnUz0rQVQnEMgk_ZuJeWlVCkvEFT5e21rr0S6h52A3-WW44wcxsvqruaqzeQVi3Z_bpgTrUw8M8WZTCvWgNy8");'></div>
+</div>
+</div>
+<!-- Sticky CTA Banner -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-[calc(448px-2rem)] z-30">
+<a href="dashboard.html" class="w-full flex items-center justify-between bg-primary p-4 rounded-xl shadow-lg shadow-primary/30 text-white">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined">trending_up</span>
+<span class="font-bold">Voir les cotations en direct</span>
+</div>
+<span class="material-symbols-outlined">chevron_right</span>
+</a>
+</div>
+<!-- Bottom Nav Bar -->
+<nav class="fixed bottom-0 left-0 right-0 z-40 bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 px-4 pb-6 pt-2">
+<div class="flex justify-between items-center max-w-md mx-auto">
+<a class="flex flex-1 flex-col items-center gap-1 text-slate-400 dark:text-slate-600" href="index.html">
+<span class="material-symbols-outlined">home</span>
+<p class="text-[10px] font-medium">Accueil</p>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-primary" href="prices.html">
+<span class="material-symbols-outlined font-bold">query_stats</span>
+<p class="text-[10px] font-bold">Prix</p>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-slate-400 dark:text-slate-600" href="blog_mobile.html">
+<span class="material-symbols-outlined">newspaper</span>
+<p class="text-[10px] font-medium">Articles</p>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-slate-400 dark:text-slate-600" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-[10px] font-medium">Profil</p>
+</a>
+</div>
+</nav>
+</div>
+<!-- Hidden scrollbar style -->
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body></html>

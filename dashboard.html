@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display transition-colors duration-200">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-[1440px] mx-auto px-6 h-16 flex items-center justify-between">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-3xl font-bold">query_stats</span>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-tight">Financia</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="index.html">Accueil</a>
+<a class="text-primary text-sm font-bold border-b-2 border-primary pb-5 mt-5" href="dashboard.html">Marchés</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="blog_mobile.html">Analyses</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="tech_article.html">Tech</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">search</span>
+<input class="w-64 pl-10 pr-4 py-2 bg-slate-100 dark:bg-slate-800 border-none rounded-xl text-sm focus:ring-2 focus:ring-primary/50 transition-all" placeholder="Rechercher une valeur..." type="text"/>
+</div>
+<button class="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="h-10 w-10 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary font-bold overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="User profile avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3_pFAgixzY-TbH4s2ggYX-jb51vhyeN8UMJd03ylABmUBnyDe_z_VkqlEd02eG7SsxH5tik_VvRFLSqCg0Xs-9YvBHSFkzy-sY5u9tJT2O3wxFTbqE39te84t-kUY98s8ZQsGgXTFrnxYVQHxf9eHNHR7T_yZsuRKYYzkyiknYEq2JE5tW3LJMCWJwq_6Mweo3vh-OEvjeWSJSEctOOHEoHf-pmvlkE6uin6Ep-tXgfGLzZiH3ZjmGL7hdW-Wr9QkZbRPcGKQ8cA"/>
+</div>
+</div>
+</div>
+</header>
+<div class="max-w-[1440px] mx-auto flex min-h-screen">
+<!-- Persistent Sidebar Navigation -->
+<aside class="w-64 shrink-0 border-r border-slate-200 dark:border-slate-800 p-6 hidden lg:block sticky top-16 h-[calc(100vh-64px)] overflow-y-auto">
+<div class="space-y-8">
+<div>
+<h3 class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-4">Navigation</h3>
+<ul class="space-y-1">
+<li>
+<a class="flex items-center gap-3 px-3 py-2.5 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-all group" href="#">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary">dashboard</span>
+<span class="text-sm font-medium">Tableau de bord</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-3 py-2.5 bg-primary/10 text-primary rounded-lg transition-all" href="prices.html">
+<span class="material-symbols-outlined">trending_up</span>
+<span class="text-sm font-bold">Cotations &amp; Prix</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-3 py-2.5 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-all group" href="#">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary">bar_chart</span>
+<span class="text-sm font-medium">Graphiques</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-3 py-2.5 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-all group" href="blog_mobile.html">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary">newspaper</span>
+<span class="text-sm font-medium">Actualités</span>
+</a>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-4">Marchés</h3>
+<ul class="space-y-1">
+<li>
+<a class="flex items-center justify-between px-3 py-2.5 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-all" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-400">bolt</span>
+<span class="text-sm font-medium">Énergie</span>
+</div>
+<span class="text-[10px] bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400 px-1.5 py-0.5 rounded font-bold">+2.4%</span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-3 py-2.5 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-all" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-400">diamond</span>
+<span class="text-sm font-medium">Métaux</span>
+</div>
+<span class="text-[10px] bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-400 px-1.5 py-0.5 rounded font-bold">-0.8%</span>
+</a>
+</li>
+<li>
+<a class="flex items-center justify-between px-3 py-2.5 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-all" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-400">agriculture</span>
+<span class="text-sm font-medium">Agriculture</span>
+</div>
+<span class="text-[10px] bg-slate-200 text-slate-600 dark:bg-slate-700 dark:text-slate-400 px-1.5 py-0.5 rounded font-bold">0.0%</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="pt-8 border-t border-slate-200 dark:border-slate-800">
+<div class="bg-gradient-to-br from-primary to-orange-600 p-4 rounded-xl text-white">
+<p class="text-xs font-bold opacity-80 mb-1">PRO PLAN</p>
+<p class="text-sm font-bold mb-3">Accédez à l'illimité</p>
+<button class="w-full py-2 bg-white text-primary text-xs font-bold rounded-lg hover:bg-slate-50 transition-colors">Améliorer</button>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 min-w-0 bg-background-light dark:bg-background-dark p-6 lg:p-10">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400 mb-8">
+<a class="hover:text-primary transition-colors" href="#">Marchés</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-slate-900 dark:text-slate-100 font-medium">Cotation &amp; Prix</span>
+</nav>
+<!-- Page Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+<div class="space-y-2">
+<h1 class="text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight">Cotation &amp; Prix</h1>
+<p class="text-slate-500 dark:text-slate-400 text-lg">Suivez l'évolution en temps réel de 128 indices et matières premières.</p>
+</div>
+<div class="flex items-center gap-3">
+<button class="flex items-center gap-2 px-5 py-2.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm font-bold hover:bg-slate-50 transition-all">
+<span class="material-symbols-outlined text-lg">filter_list</span>
+                        Filtrer
+                    </button>
+<button class="flex items-center gap-2 px-5 py-2.5 bg-primary text-white rounded-xl text-sm font-bold shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all">
+<span class="material-symbols-outlined text-lg">add</span>
+                        Suivre
+                    </button>
+</div>
+</div>
+<!-- Article Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
+<!-- Card 1 -->
+<article class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Stock market chart showing upward trend" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8ioIZkS3WG_G0kCTYJOR8uhLQ_GVxxfU16kXSfA8IXAs8N8KTxHleSczKr8RwmT5Tgph4sKKl7o2nUfPa81rDWYqfMXYnfjJx44nFwPIvFx1RO-Ffm92YvWbeXJTwoMuXI9RnTD79s1GjP5zJ37_Y7q0tFUnC9O_EDtuxfeKAYz6dQwf_7TpWbL8X_82vVja6r-m91iRffPMPayqI-GKeId0eD-NCZSIhKrt76UUaCxFKkxnjkut22VxQ6TUwpfmtt7-nFG82hfA"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md">Cotation &amp; Prix</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-4 text-xs text-slate-400 dark:text-slate-500 mb-3">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">schedule</span>5 min</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">visibility</span>1.2k</span>
+<span>12 Mai 2024</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-primary transition-colors leading-snug">
+                            Pétrole Brent : Pourquoi la volatilité s'installe à nouveau ?
+                        </h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm line-clamp-2">
+                            Analyse complète des facteurs géopolitiques influençant le cours de l'or noir cette semaine.
+                        </p>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Gold bars glowing under warm light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPOhzwf1kBltQHrdQrjlrHIxCtsOAABQUf0AzZK-lpcfYxpg9TY0qY8XqbLK0N6lOSqw2dSW_XjSTBOaOqvWlbcC-kiN7LAF7Ie4NBWc0Kj59p_r9nSeEV6tr-bQt_mT5OxtqLXSQtEJ7wATmMZNPhSU3VG2o8bRzPqjfMIhQW0A8-IEMTCYNEwCBUG5QevJ3SrA2tvhG_2KjRamZUpf4FxvZ3FTSSib3bwxa6LiLKCUlHKazUpf6K8L5iVEJYUCjh5_sqmgyVdfQ"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md">Cotation &amp; Prix</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-4 text-xs text-slate-400 dark:text-slate-500 mb-3">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">schedule</span>8 min</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">visibility</span>3.4k</span>
+<span>10 Mai 2024</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-primary transition-colors leading-snug">
+                            L'Or atteint des sommets historiques face à l'inflation.
+                        </h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm line-clamp-2">
+                            Le métal jaune confirme son statut de valeur refuge dans un contexte d'incertitude monétaire.
+                        </p>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Wheat field at sunset agricultural market" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAGZ6zZX0SRJydFByIli-l_nAnzn79w4tZeEGkMEawAtM1Uwl9Ko1IfNWCHS700e3CH5o2N_h5EQtkRfem4dgFVbV7dzvbB6RU9bVLmVzsDDO0pMgV5bhfIfiOSOVTmy-vyVmAr82jhQ_0HfAvjx1ob5-CQgNgMSjvCiwPXsxIs6tYevYOhud-U_iGGBh0cOOttQRnwoD0HtwtS9Jf5fKvSz4ZfUGj5ax01oycjhjU-Gzq2tt5ruL2wwqUwDW7tDLOw3cCrsNaNqw"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md">Cotation &amp; Prix</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-4 text-xs text-slate-400 dark:text-slate-500 mb-3">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">schedule</span>4 min</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">visibility</span>890</span>
+<span>08 Mai 2024</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-primary transition-colors leading-snug">
+                            Marché du blé : Les prévisions de récolte mondiale.
+                        </h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm line-clamp-2">
+                            L'offre mondiale se stabilise, mais les prix restent sous pression logistique.
+                        </p>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Abstract digital representation of data" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXNxK55QihuYjGY459ZD728h3xzRgGmvJF__h4LfEgKZuwYc9dlJLu-zpZPZJUs8iBFbwA9s9QL4jxH-V3l0uvPyU7Bv8FHQ-Cf_E4LfB6Mt1zADi1nyF6YX1F2DcRzU5tXHAkUFtd8lS9A7ws7zW6F_9Xyil2JpPDEgVtcbLoS9PYhH5WPF-fVeQOPOiNN6f4MDK5RF5yIdAtA-LXctITHf45NguF2pATnM2bnvMhF5MHOSQoMmQ7-JRIQy2CE_bnL39hz2lz3Ys"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md">Cotation &amp; Prix</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-4 text-xs text-slate-400 dark:text-slate-500 mb-3">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">schedule</span>6 min</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">visibility</span>2.1k</span>
+<span>05 Mai 2024</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-primary transition-colors leading-snug">
+                            Crypto-actifs : Corrélation avec les marchés actions.
+                        </h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm line-clamp-2">
+                            Comment les politiques de la Fed impactent simultanément le BTC et le Nasdaq.
+                        </p>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up of various currency notes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASwwXA8AzENObJ5SQLqKVYqgqR5Fdzch6y_MCQeSimVob1lh1PrwVoQ2GZtQ2BSxLO4y9-OvmDX7lMfjQD0jtKxtaxSZ8vOXGOYVLZwcB33jjjoG_Y_mjoU_aRhQTGt1UXsumme0QgySbaoSxD5H-7d2lL-1rx4A9uH4T3zNl1xj4zTCfcJbpBeF9r9wHDH3SIjVVqnImuVTPCfww-dz0UeWcWpt7y8yRm2y8_MfEpacrbhfGbHJ_cYvMSm3sIJYX5wZJhPw3OTcg"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md">Cotation &amp; Prix</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-4 text-xs text-slate-400 dark:text-slate-500 mb-3">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">schedule</span>10 min</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">visibility</span>4.2k</span>
+<span>03 Mai 2024</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-primary transition-colors leading-snug">
+                            EUR/USD : Vers une parité durable ?
+                        </h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm line-clamp-2">
+                            Le différentiel de taux d'intérêt entre la BCE et la Fed continue de dicter le marché des devises.
+                        </p>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Industrial copper pipes background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMNDaIxcPDvHSR64jALEKbNEurrpK5knuKCCMz21yAWfvGNVNw8O3AaRgkiN47Veq-mMRQ1KH5jhdIN_lpvAuFXtcrn0jNYCaqix99q6c1JvBsRHwTj3YWfG1CKIShrCAJLO4nQ2_WmI59IgtPHAxW8lgDCHtveQVGTK3WdTG7Oki2xyyasaRbruYVX6sZwnnBpZu91gBYdyNNUNtQwptCE7wBR0yriGAz_GretBxEokragWwbnupwXIRnaLoPVwYRcnbiJ_kkDQs"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md">Cotation &amp; Prix</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-4 text-xs text-slate-400 dark:text-slate-500 mb-3">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">schedule</span>7 min</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">visibility</span>1.5k</span>
+<span>01 Mai 2024</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-primary transition-colors leading-snug">
+                            Cuivre : Le baromètre de l'économie mondiale.
+                        </h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm line-clamp-2">
+                            La demande chinoise montre des signes de faiblesse, entraînant les cours vers le bas.
+                        </p>
+</div>
+</article>
+</div>
+<!-- Wide CTA Banner -->
+<section class="relative rounded-[2rem] overflow-hidden p-8 lg:p-16 mb-10 group">
+<div class="absolute inset-0 bg-slate-900">
+<div class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/80 to-transparent z-10"></div>
+<img class="w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-[2s]" data-alt="Background of financial trading dashboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyspFhUUuTSWU_r3fNMPUeeuLGu-JKWSoStStCG8W3grtRowuWSM7-Wjw1-GCYUmtsyerJkxHhQpXabeg-56fJa9Tb0tLh7Nhg6bSKrgZVXAqW40W1cEglNjKc9AdoHUHET5jPjy0p3V_cpV98oa9-2QPxbEZAKW2vMto9vvDqGyG0PYbhrXcb2qwTVtmRUlAmLuHx8W_TX51tofonos8AmKkEzWrdS4aDqpsOSg5f2zQvtlMybb1RyRCj6lM6eY9Ea6q09LX7DIE"/>
+</div>
+<div class="relative z-20 max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 border border-primary/30 rounded-full text-primary text-xs font-bold uppercase tracking-wider mb-6">
+<span class="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+                        En Direct
+                    </div>
+<h2 class="text-3xl lg:text-5xl font-black text-white mb-6 leading-tight">
+                        Ne manquez aucun mouvement du marché.
+                    </h2>
+<p class="text-slate-300 text-lg mb-10 leading-relaxed">
+                        Accédez à notre plateforme de trading en temps réel avec des outils d'analyse avancés et des alertes personnalisées.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 hover:-translate-y-1 transition-all shadow-xl shadow-primary/30">
+                            Voir les cotations en direct
+                        </button>
+<button class="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-xl backdrop-blur-md border border-white/20 transition-all">
+                            En savoir plus
+                        </button>
+</div>
+</div>
+<div class="absolute bottom-0 right-0 p-8 hidden xl:block z-20">
+<div class="bg-white/10 backdrop-blur-xl border border-white/10 rounded-2xl p-6 w-80">
+<div class="flex items-center justify-between mb-4">
+<span class="text-white font-bold">Top Tendance</span>
+<span class="material-symbols-outlined text-primary">trending_up</span>
+</div>
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="text-slate-300 text-sm">CAC 40</span>
+<span class="text-emerald-400 font-bold text-sm">+1.45%</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-slate-300 text-sm">Bitcoin</span>
+<span class="text-rose-400 font-bold text-sm">-2.10%</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-slate-300 text-sm">Or (Spot)</span>
+<span class="text-emerald-400 font-bold text-sm">+0.67%</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pagination (Subtle) -->
+<div class="flex items-center justify-center gap-2 pb-10">
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white font-bold">1</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-primary hover:text-primary transition-all">2</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-primary hover:text-primary transition-all">3</button>
+<span class="px-2 text-slate-400">...</span>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-primary hover:text-primary transition-all">12</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</main>
+</div>
+<!-- Simple Footer for Context -->
+<footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12 px-6">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2 space-y-4">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-3xl font-bold">query_stats</span>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold tracking-tight">Financia</h2>
+</div>
+<p class="text-slate-500 dark:text-slate-400 max-w-sm">
+                    Votre partenaire de confiance pour le suivi des marchés mondiaux et l'analyse financière stratégique.
+                </p>
+</div>
+<div>
+<h4 class="text-sm font-bold text-slate-900 dark:text-white mb-4">Légal</h4>
+<ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Mentions légales</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Politique de confidentialité</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">CGU</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-sm font-bold text-slate-900 dark:text-white mb-4">Newsletter</h4>
+<div class="flex gap-2">
+<input class="flex-1 bg-slate-100 dark:bg-slate-800 border-none rounded-lg text-sm px-4" placeholder="Email" type="email"/>
+<button class="bg-primary p-2 text-white rounded-lg hover:bg-primary/90 transition-colors">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-xs text-slate-400">
+            © 2024 Financia S.A. Tous droits réservés.
+        </div>
+</footer>
+</body></html>

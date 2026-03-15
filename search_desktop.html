@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex h-16 items-center justify-between gap-8">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-3xl font-bold">agriculture</span>
+<h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">AgriSearch</h2>
+</div>
+<div class="flex-1 max-w-lg hidden md:block">
+<div class="relative group">
+<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-slate-400 group-focus-within:text-primary transition-colors">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+<input class="block w-full rounded-xl border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 py-2 pl-10 pr-3 text-sm focus:border-primary focus:ring-primary dark:text-white placeholder:text-slate-500" placeholder="Rechercher des cultures, marchés..." type="text" value="piment"/>
+</div>
+</div>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Accueil</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="blog_mobile.html">Guides</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="dashboard.html">Marché</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="tech_article.html">Tech</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="flex items-center gap-2 p-1 pl-1 pr-3 rounded-full border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+<div class="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">person</span>
+</div>
+<span class="text-sm font-medium hidden sm:inline">Mon Profil</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+<div class="flex flex-col gap-2 mb-8">
+<nav class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
+<a class="hover:text-primary" href="index.html">Accueil</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-slate-900 dark:text-slate-200">Résultats de recherche</span>
+</nav>
+<h1 class="text-3xl font-extrabold text-slate-900 dark:text-white">
+                    3 articles pour <span class="text-primary italic">« piment »</span>
+</h1>
+</div>
+<div class="flex border-b border-slate-200 dark:border-slate-800 mb-8 overflow-x-auto no-scrollbar">
+<button class="px-6 py-4 text-sm font-bold border-b-2 border-primary text-primary whitespace-nowrap">Tous les résultats</button>
+<button class="px-6 py-4 text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-primary border-b-2 border-transparent transition-colors whitespace-nowrap">Guide Agricole</button>
+<button class="px-6 py-4 text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-primary border-b-2 border-transparent transition-colors whitespace-nowrap">Analyse Marché</button>
+<button class="px-6 py-4 text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-primary border-b-2 border-transparent transition-colors whitespace-nowrap">Exportation</button>
+</div>
+<div class="flex flex-col lg:flex-row gap-12">
+<div class="flex-1 space-y-8">
+<article class="group bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row gap-6 p-4 border border-slate-100 dark:border-slate-800">
+<div class="w-full md:w-64 h-48 rounded-lg overflow-hidden shrink-0">
+<img alt="Champ de piments rouges" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Close up of red chili peppers in a field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVINEVVHOIJrGjCLHK3cwoMyrDjFYDsC1sPn2Neq5VMZQRkMfTiObVQMgSSmC9Oq7W56iVgCceIFR6q8dCSvzuViqfoMS1eS2H2z06kOg5RVjF5ivLjjX7IUmKoIRhVyCXaHrnM0358RinypZDaSWYAfIvCrz3kjhF4KKCx21s6g5IkJct75upDq7OaYXvDWzi5rGszMnZUjhjnU-UItnsObfTnExM9B_n_b2oLbbQEgXg4S7dMV7eRcM2qrBknp0EVgJMHBeZ098"/>
+</div>
+<div class="flex flex-col justify-between py-2">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider rounded bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400">Guide Agricole</span>
+<span class="text-xs text-slate-400">Publié il y a 2 jours</span>
+</div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Culture du piment Habanero : Guide complet du semis à la récolte</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm line-clamp-2">Optimisez votre rendement avec nos conseils experts on l'irrigation, la fertilisation organique et la gestion des ravageurs spécifiques au piment antillais.</p>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<a class="text-primary font-bold text-sm flex items-center gap-1 hover:underline" href="article.html">
+                                    Lire la suite
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<div class="flex gap-2">
+<button class="p-2 text-slate-400 hover:text-primary"><span class="material-symbols-outlined text-xl">bookmark</span></button>
+<button class="p-2 text-slate-400 hover:text-primary"><span class="material-symbols-outlined text-xl">share</span></button>
+</div>
+</div>
+</div>
+</article>
+<article class="group bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row gap-6 p-4 border border-slate-100 dark:border-slate-800">
+<div class="w-full md:w-64 h-48 rounded-lg overflow-hidden shrink-0">
+<img alt="Marché local de piments" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Market stall with various colorful chili peppers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPa3rzODfBLAkpQu_dU9Fia0ohEXou1LTEPjmjN_t8quNz-uoSncSaKnb7MxRZWy74a4gJFxnXqw69dsG56zU6AfYewM1A7isnaRM9QK5aMRf5ybTx06KPUPchoBeV7kYhtAF5H7ZNp0bJjKWRpx5lcR7yAInJk0g0my4iXeRA1dCZ8oAqsClnqllyrWyeTS2G_u3KZm0eYzB1H-kmLFk4SovciGnNFu5l71IOTYR-NXA8ual6-Dig-T_4v0cJ-vT3Cc6bZJMxSCU"/>
+</div>
+<div class="flex flex-col justify-between py-2">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider rounded bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">Analyse Marché</span>
+<span class="text-xs text-slate-400">Publié il y a 1 semaine</span>
+</div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Fluctuation des prix du piment sur le marché régional : Tendance 2024</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm line-clamp-2">Une analyse détaillée de l'offre et de la demande mondiale, avec un focus sur les pics de prix saisonniers et les opportunités pour les producteurs locaux.</p>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<a class="text-primary font-bold text-sm flex items-center gap-1 hover:underline" href="#">
+                                    Lire la suite
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<div class="flex gap-2">
+<button class="p-2 text-slate-400 hover:text-primary"><span class="material-symbols-outlined text-xl">bookmark</span></button>
+<button class="p-2 text-slate-400 hover:text-primary"><span class="material-symbols-outlined text-xl">share</span></button>
+</div>
+</div>
+</div>
+</article>
+<article class="group bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row gap-6 p-4 border border-slate-100 dark:border-slate-800">
+<div class="w-full md:w-64 h-48 rounded-lg overflow-hidden shrink-0">
+<img alt="Séchage de piment pour export" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Dried chili peppers in crates for export" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnq4tPUX9vnOxoo1fod207nswX4Mh3HHDhoYxeu-25EgbF9DnOUQJnmcYI8XyYqlHViD-jHQS7wNASDZsZWlo8X5fNuxNWOiEn9u6KUuSjmJOiufIkECOe8wWOKjAz2kD8f1ByeSw3yAv0TyTeH3dZKGtolQCnXLFj1GF9O64_9dmC5aWXyfh3rRIG9rXe0amMztXHyTtOKba97H08sqmw--w_xhNg9X8U55i7fQEtsl7rz9Q-wSIRDNuzrj8FRxEFS2Hj-2DliW8"/>
+</div>
+<div class="flex flex-col justify-between py-2">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider rounded bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400">Exportation</span>
+<span class="text-xs text-slate-400">Publié le 12 Octobre</span>
+</div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Normes Phytosanitaires pour l'exportation du piment séché vers l'Europe</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm line-clamp-2">Tout ce qu'il faut savoir sur les certifications, l'emballage et les contrôles de qualité requis pour accéder aux marchés internationaux.</p>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<a class="text-primary font-bold text-sm flex items-center gap-1 hover:underline" href="#">
+                                    Lire la suite
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<div class="flex gap-2">
+<button class="p-2 text-slate-400 hover:text-primary"><span class="material-symbols-outlined text-xl">bookmark</span></button>
+<button class="p-2 text-slate-400 hover:text-primary"><span class="material-symbols-outlined text-xl">share</span></button>
+</div>
+</div>
+</div>
+</article>
+</div>
+<aside class="w-full lg:w-80 shrink-0 space-y-8">
+<div class="bg-primary/5 dark:bg-primary/10 rounded-xl p-6 border border-primary/20">
+<h4 class="text-lg font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">trending_up</span>
+                            Recherches populaires
+                        </h4>
+<ul class="space-y-3">
+<li>
+<a class="flex items-center gap-3 group" href="#">
+<span class="material-symbols-outlined text-primary group-hover:fill-1">local_fire_department</span>
+<span class="text-sm font-medium hover:text-primary">Piment oiseau</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 group" href="#">
+<span class="material-symbols-outlined text-primary group-hover:fill-1">local_fire_department</span>
+<span class="text-sm font-medium hover:text-primary">Piment habanero</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 group" href="#">
+<span class="material-symbols-outlined text-primary group-hover:fill-1">wb_sunny</span>
+<span class="text-sm font-medium hover:text-primary">Techniques de séchage</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 group" href="#">
+<span class="material-symbols-outlined text-primary group-hover:fill-1">eco</span>
+<span class="text-sm font-medium hover:text-primary">Engrais naturels</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-xl p-6 border border-slate-100 dark:border-slate-800 shadow-sm">
+<h4 class="text-lg font-bold mb-4">Catégories connexes</h4>
+<div class="flex flex-wrap gap-2">
+<a class="px-3 py-1.5 rounded-full bg-slate-100 dark:bg-slate-800 text-xs font-semibold hover:bg-primary/20 hover:text-primary transition-colors" href="#">Épices</a>
+<a class="px-3 py-1.5 rounded-full bg-slate-100 dark:bg-slate-800 text-xs font-semibold hover:bg-primary/20 hover:text-primary transition-colors" href="#">Maraîchage</a>
+<a class="px-3 py-1.5 rounded-full bg-slate-100 dark:bg-slate-800 text-xs font-semibold hover:bg-primary/20 hover:text-primary transition-colors" href="#">Agriculture Bio</a>
+<a class="px-3 py-1.5 rounded-full bg-slate-100 dark:bg-slate-800 text-xs font-semibold hover:bg-primary/20 hover:text-primary transition-colors" href="#">Logistique</a>
+<a class="px-3 py-1.5 rounded-full bg-slate-100 dark:bg-slate-800 text-xs font-semibold hover:bg-primary/20 hover:text-primary transition-colors" href="#">Engrais</a>
+</div>
+</div>
+<div class="bg-slate-900 text-white rounded-xl p-6 relative overflow-hidden">
+<div class="relative z-10">
+<h4 class="text-lg font-bold mb-2">Besoin d'aide ?</h4>
+<p class="text-slate-400 text-sm mb-4">Parlez à un expert agricole pour optimiser vos cultures.</p>
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-2 px-4 rounded-lg transition-colors">
+                                Consulter un expert
+                            </button>
+</div>
+<div class="absolute -bottom-4 -right-4 text-slate-800 opacity-20">
+<span class="material-symbols-outlined text-9xl">support_agent</span>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<footer class="mt-20 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 text-primary mb-4">
+<span class="material-symbols-outlined text-2xl font-bold">agriculture</span>
+<h2 class="text-lg font-bold tracking-tight text-slate-900 dark:text-white">AgriSearch</h2>
+</div>
+<p class="text-sm text-slate-500">La plateforme de référence pour les professionnels de l'agriculture en Afrique.</p>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 dark:text-white mb-4 text-sm uppercase tracking-wider">Ressources</h5>
+<ul class="space-y-2 text-sm text-slate-500">
+<li><a class="hover:text-primary" href="#">Guides de culture</a></li>
+<li><a class="hover:text-primary" href="#">Analyses de prix</a></li>
+<li><a class="hover:text-primary" href="#">Fiches techniques</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 dark:text-white mb-4 text-sm uppercase tracking-wider">Légal</h5>
+<ul class="space-y-2 text-sm text-slate-500">
+<li><a class="hover:text-primary" href="#">Conditions générales</a></li>
+<li><a class="hover:text-primary" href="#">Confidentialité</a></li>
+<li><a class="hover:text-primary" href="#">Mentions légales</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 dark:text-white mb-4 text-sm uppercase tracking-wider">Contact</h5>
+<ul class="space-y-2 text-sm text-slate-500">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-base">mail</span> support@agrisearch.com</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-base">call</span> +225 00 00 00 00</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-slate-100 dark:border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-slate-400">© 2024 AgriSearch. Tous droits réservés.</p>
+<div class="flex gap-6">
+<a class="text-slate-400 hover:text-primary" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
+<a class="text-slate-400 hover:text-primary" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

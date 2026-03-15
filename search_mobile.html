@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IPPOO Blog - Recherche</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header / Navigation Top -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 sticky top-0 z-10 border-b border-slate-200 dark:border-slate-800">
+<a href="index.html" class="text-primary flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-primary/10 cursor-pointer">
+<span class="material-symbols-outlined">arrow_back</span>
+</a>
+<h2 class="text-lg font-bold leading-tight tracking-tight flex-1 ml-2">Recherche</h2>
+</div>
+<!-- Search Bar -->
+<div class="px-4 py-4">
+<label class="flex flex-col min-w-40 h-14 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full shadow-sm">
+<div class="text-slate-400 flex bg-white dark:bg-slate-900 items-center justify-center pl-4 rounded-l-xl border border-r-0 border-slate-200 dark:border-slate-800">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden text-slate-900 dark:text-slate-100 focus:outline-0 focus:ring-0 border-y border-x-0 border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 h-full placeholder:text-slate-400 px-4 text-base font-normal leading-normal" value="piment"/>
+<div class="flex items-center justify-center rounded-r-xl border border-l-0 border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 pr-4">
+<button class="flex cursor-pointer items-center justify-center rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 p-1 text-slate-400">
+<span class="material-symbols-outlined text-xl">cancel</span>
+</button>
+</div>
+</div>
+</label>
+</div>
+<!-- Result Stats -->
+<div class="px-4 pt-2 pb-4">
+<h3 class="text-slate-900 dark:text-slate-100 tracking-tight text-xl font-bold leading-tight">3 articles pour « piment »</h3>
+</div>
+<!-- Articles List -->
+<div class="flex flex-col gap-6 px-4 pb-24">
+<!-- Article 1: Farming Guide -->
+<div class="flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="w-full bg-center bg-no-repeat aspect-[16/9] bg-cover" data-alt="Fresh red chili peppers growing in a green field" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBhagB-EfH2TkAZAU9ovKqOfSrm-R2vXLT-XvIOUjM7h1DyOHctlO9NP-nYhfm3Wm3XmRsA4pwL2bv7CTp-tp3WXY3GHB6EESIfCeUwSJT-duVuRwfh6lvBani6NgluyQx5k1JoaG6EUntcRNWX4MckcI1grKYh_sPPvbFYceJr74XwC0R8slbw2ZDoxYU7hXm2TFrM-8T6qDT3P8PNlMd75YoX68KmZe78G9wqDmX1gaJ87KjHqFrCdMXHb91rNW8Y2usEBvLWJJ4");'></div>
+<div class="flex flex-col p-4 gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider rounded">Guide Agricole</span>
+<span class="text-slate-400 text-xs">• 6 min de lecture</span>
+</div>
+<h4 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-snug">Guide complet : Réussir sa culture de piment en zone tropicale</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Découvrez les meilleures techniques d'irrigation et de fertilisation pour maximiser votre rendement de piments cette saison.</p>
+<div class="flex items-center justify-between mt-2 pt-4 border-t border-slate-100 dark:border-slate-800">
+<div class="flex items-center gap-2">
+<div class="size-6 rounded-full bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xs text-primary">person</span>
+</div>
+<span class="text-xs font-medium text-slate-500">Jean Dupont</span>
+</div>
+<a href="article.html" class="text-primary text-sm font-bold flex items-center gap-1">
+                            Lire la suite <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Article 2: Market Prices -->
+<div class="flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="w-full bg-center bg-no-repeat aspect-[16/9] bg-cover" data-alt="Market stall with baskets of different chili varieties" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDy4u1SalgME6--oQ8B6JN__2cwQimAR2XTfPEsvl0dhAbAXIn-tpnwibfxzHz69zUJiHltfWu2QWoa-vZCc_c2YgXPTIqCL68UVKlWcQcwlkGMZgSVvk9rOsU3sOFbkIT1GtOiW3MCZ2epuPO1JLCHDIrDR2Vt-u1gp7CrGZmcVsIb9rMCBqZnzA_gxchcun2YDSqzhOynJjU4s2G_R3Z4hjrj-KzINT9iP-87vVHQdd9flH0igNVtogL60F4bgxxsFnyiiVF982Q");'></div>
+<div class="flex flex-col p-4 gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400 text-[10px] font-bold uppercase tracking-wider rounded">Analyse Marché</span>
+<span class="text-slate-400 text-xs">• 4 min de lecture</span>
+</div>
+<h4 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-snug">Analyse des prix : Pourquoi le prix du piment oiseau s'envole ce mois-ci</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Le point sur les fluctuations des cours régionaux et les prévisions pour le prochain trimestre de récolte.</p>
+<div class="flex items-center justify-between mt-2 pt-4 border-t border-slate-100 dark:border-slate-800">
+<div class="flex items-center gap-2">
+<div class="size-6 rounded-full bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xs text-primary">trending_up</span>
+</div>
+<span class="text-xs font-medium text-slate-500">Service Économique</span>
+</div>
+<button class="text-primary text-sm font-bold flex items-center gap-1">
+                            Lire la suite <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Article 3: Market Demand -->
+<div class="flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="w-full bg-center bg-no-repeat aspect-[16/9] bg-cover" data-alt="Logistics and export of spices in boxes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAxFDtadYWZMo7GKz66Z8ZabmobWA-eBj6c-47hZ4U58uUx7UxpRCnchHklpeBglfkh8uOATsRUNLE1PvPZP9WevWfbFbfi16221Tz3db5qgOD8LnTFSAw_NLB2DvBBabYMjfNoMH9r2XMBdT-nz7J_-MFpwiubiDPeEc3OO5sX2Npc-nQMbD__tN4lHS_F12lpyTvp3OG27wdIwgjK5wK8qqF8p66rcswTc4MKdkxxmn_gqVOkB6hd52II2T_UQ2mfLynoPjgS5FI");'></div>
+<div class="flex flex-col p-4 gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400 text-[10px] font-bold uppercase tracking-wider rounded">Exportation</span>
+<span class="text-slate-400 text-xs">• 8 min de lecture</span>
+</div>
+<h4 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-snug">Opportunités d'export : La demande croissante de piment transformé</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Comment la transformation locale peut multiplier la valeur de votre production par trois sur le marché européen.</p>
+<div class="flex items-center justify-between mt-2 pt-4 border-t border-slate-100 dark:border-slate-800">
+<div class="flex items-center gap-2">
+<div class="size-6 rounded-full bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-xs text-primary">public</span>
+</div>
+<span class="text-xs font-medium text-slate-500">Marie L.</span>
+</div>
+<button class="text-primary text-sm font-bold flex items-center gap-1">
+                            Lire la suite <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation Bar -->
+<div class="fixed bottom-0 left-0 right-0 border-t border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md px-4 pb-4 pt-2">
+<div class="flex gap-2 justify-around max-w-md mx-auto">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="index.html">
+<span class="material-symbols-outlined">home</span>
+<p class="text-[10px] font-medium leading-normal">Accueil</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary" href="search_mobile.html">
+<span class="material-symbols-outlined fill-1">search</span>
+<p class="text-[10px] font-bold leading-normal">Recherche</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="blog_mobile.html">
+<span class="material-symbols-outlined">book</span>
+<p class="text-[10px] font-medium leading-normal">Articles</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+<p class="text-[10px] font-medium leading-normal">Sauvés</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-[10px] font-medium leading-normal">Profil</p>
+</a>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7C3AED",
+                        "teal-accent": "#0D9488",
+                        "orange-accent": "#F97316",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<header class="sticky top-0 z-50 flex items-center bg-white/95 dark:bg-background-dark/95 backdrop-blur-sm p-4 border-b border-slate-200 dark:border-slate-800 justify-between">
+<div class="flex items-center gap-3">
+<a href="index.html" class="text-slate-900 dark:text-slate-100 flex size-10 items-center justify-center rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 cursor-pointer">
+<span class="material-symbols-outlined">arrow_back</span>
+</a>
+<h1 class="text-lg font-bold leading-tight tracking-tight">Blog IPPOO</h1>
+</div>
+<div class="flex size-10 items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 cursor-pointer">
+<span class="material-symbols-outlined text-slate-600 dark:text-slate-300">notifications</span>
+</div>
+</header>
+<main class="pb-24">
+<section class="relative h-64 w-full flex items-end p-6 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
+<div class="h-full w-full bg-cover bg-center" data-alt="Vibrant colorful aerial view of a busy African open-air wholesale market" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBXYFyyt70FS6IQTIxVi8UazMcDF516qCMYLWgqmQ2QMTjJzLQgyXAveb59JIEKZY_F2MTkowQEX3RbGsS5iyGgShl881empfqgLct_MxtZiWgDQJH4iZibbSdl86O_tsA5vK2y4hLzQEUKcbOW1j6MC6btXxnXNmqRFA2ZkftSnWopAvevr0LBQHNflzKkRNI3Bklt_YpS7k3M96WcD6zPZb5RF2TFnOIFTMMiDcXkBcPpKXse1bIICFxGFd1wXYxnH7KX0601GTQ')"></div>
+</div>
+<div class="relative z-20 w-full">
+<h2 class="text-white text-3xl font-bold leading-tight mb-4">Informations &amp; Analyses</h2>
+<div class="flex gap-4">
+<div class="bg-white/20 backdrop-blur-md rounded-xl p-3 flex-1 border border-white/30">
+<p class="text-white/80 text-xs font-medium uppercase tracking-wider">Articles</p>
+<p class="text-white text-xl font-bold">120+</p>
+</div>
+<div class="bg-white/20 backdrop-blur-md rounded-xl p-3 flex-1 border border-white/30">
+<p class="text-white/80 text-xs font-medium uppercase tracking-wider">Lectures</p>
+<p class="text-white text-xl font-bold">15k+</p>
+</div>
+</div>
+</div>
+</section>
+<section class="px-4 py-6">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="w-full h-14 pl-12 pr-4 bg-white dark:bg-slate-800 border-none rounded-xl shadow-sm focus:ring-2 focus:ring-primary text-slate-900 dark:text-white placeholder:text-slate-400" placeholder="Rechercher un article..." type="text"/>
+</div>
+</section>
+<section class="mb-6">
+<div class="flex gap-3 overflow-x-auto px-4 hide-scrollbar">
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-primary text-white font-semibold">Tous</button>
+<a href="prices.html" class="whitespace-nowrap px-6 py-2 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">Cotation &amp; Prix</a>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">Guides pratiques</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">Témoignages</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">Secteurs</button>
+</div>
+</section>
+<section class="px-4 mb-8">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-xl font-bold">À la une</h3>
+<span class="text-primary text-sm font-semibold">Voir tout</span>
+</div>
+<a href="article.html" class="block bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-md border border-slate-100 dark:border-slate-700">
+<div class="h-52 w-full bg-cover bg-center" data-alt="Fresh vegetables and marketplace products display" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAfKesgRIdVcG8yOA051v-THEZYNLOnBGwilu-iFxx37bq4tTBgL0ahgPUfgncr4wYVoRz62B5vv9j7YrhGgb-cTj_ydrDnhg-tQnbmJYGYULJ2C_88qK3T8gqft0ZbriEnYClfEpUuBg6Kfl_DOc9IX4BQBF0Y0I7WX-3kfUFVZsUHWP6GoRtchn5gerzvjIJ6_yJTsaoKplnHxi65FUtlNk3XEINx6pZ8hec61esNNpI7T_ZAC8swekbK-7hdEdxmpb9Alm5XqyI')"></div>
+<div class="p-5">
+<div class="flex items-center gap-2 mb-2">
+<span class="bg-orange-accent/10 text-orange-accent text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Guide Pratique</span>
+<span class="text-slate-400 text-xs">Il y a 2h</span>
+</div>
+<h4 class="text-xl font-bold mb-2 leading-snug">Comment optimiser vos achats de gros en 2024</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm line-clamp-2 mb-4">Découvrez les meilleures stratégies pour négocier avec les fournisseurs locaux et internationaux dans les marchés émergents.</p>
+<div class="flex items-center gap-2">
+<div class="size-6 rounded-full bg-primary flex items-center justify-center text-[10px] text-white font-bold">JD</div>
+<span class="text-xs font-medium text-slate-700 dark:text-slate-300">Jean Dupont • 5 min de lecture</span>
+</div>
+</div>
+</a>
+</section>
+<section class="mb-8">
+<div class="flex items-center justify-between px-4 mb-4">
+<h3 class="text-xl font-bold">Cotation &amp; Prix</h3>
+<a href="prices.html" class="text-teal-accent text-sm font-semibold">Toutes les analyses</a>
+</div>
+<div class="flex gap-4 overflow-x-auto px-4 hide-scrollbar">
+<div class="min-w-[240px] bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-700">
+<div class="h-32 bg-cover bg-center" data-alt="Close up of various grains and cereals in sacks" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-5nFX3GUWISUO2Nzc5qEpLI5pJZmyTPHllrg3f64pqF8xHjynOJ8ZJ92wAuJ4R_eiSjmutEQleiZs8fx3N-9j1m0bqkbuqCPyoBTYF_GyA5tut2i95mJ0j2w-ezsNV-QmVTKAQGAojt73CiULQHYU0L72Xdo3MKWyg77MQiMAwdAAggxyb-mxDx7XR6WNOB_zGVt_sq7oYuveGIqpgyUh-KlZBoiHh9T4XpDptFi_ag9ICg2fobim--8PwfankTKEpetp_2QNIjQ')"></div>
+<div class="p-3">
+<h5 class="font-bold text-sm mb-1">Céréales : Hausse de 15% du prix du maïs</h5>
+<p class="text-teal-accent text-[10px] font-bold uppercase">Analyse de prix</p>
+</div>
+</div>
+<div class="min-w-[240px] bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-700">
+<div class="h-32 bg-cover bg-center" data-alt="Fresh tropical fruits at a market stall" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDFrHXEvdUc4OXu5CtEI0kgteBSxqdWs5IerXZoutHyGu_Szh_D2KvfUccQYC_4D5r5JLO0fNugIRoTe2DWU4ZRsO47lEhiNts5IvAOX_HyOQptw6y1Q3Uy-hBJtGqqO6tQzFG_VtPdpBGiMcI-KcQnUtsyPpCzBm1JSEs9B0PpzbdX_HyORGrAZeVUiTTrGYU-3gCSUpltPGbXmEuBj-M_CWJyifVlSl8DuCy-dxMWoYg3MlRGj2swURq7xHdOkSfjLfN6S3PRglM')"></div>
+<div class="p-3">
+<h5 class="font-bold text-sm mb-1">Fruits : Disponibilité saisonnière à Abidjan</h5>
+<p class="text-teal-accent text-[10px] font-bold uppercase">Mise à jour hebdomadaire</p>
+</div>
+</div>
+</div>
+</section>
+<section class="px-4 mb-8">
+<div class="bg-gradient-to-r from-teal-accent to-emerald-600 rounded-2xl p-6 relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 opacity-20">
+<span class="material-symbols-outlined text-[120px] text-white">trending_up</span>
+</div>
+<div class="relative z-10">
+<h3 class="text-white text-xl font-bold mb-2">Cotation en temps réel</h3>
+<p class="text-white/90 text-sm mb-4 max-w-[200px]">Accédez aux derniers prix du marché pour plus de 50 produits.</p>
+<a href="dashboard.html" class="inline-block bg-white text-teal-accent font-bold px-4 py-2 rounded-lg text-sm">Découvrir l'outil</a>
+</div>
+</div>
+</section>
+<section class="px-4 mb-8">
+<h3 class="text-xl font-bold mb-4">Les plus lus</h3>
+<div class="space-y-4">
+<div class="flex gap-4 items-center">
+<span class="text-3xl font-black text-slate-200 dark:text-slate-700 italic">01</span>
+<div class="flex-1 border-b border-slate-100 dark:border-slate-800 pb-4">
+<h4 class="font-bold text-sm">Logistique : Transporter ses marchandises à moindre coût</h4>
+<p class="text-slate-400 text-[10px] mt-1">Secteur: Transport • 12k vues</p>
+</div>
+</div>
+<div class="flex gap-4 items-center">
+<span class="text-3xl font-black text-slate-200 dark:text-slate-700 italic">02</span>
+<div class="flex-1 border-b border-slate-100 dark:border-slate-800 pb-4">
+<h4 class="font-bold text-sm">Financer son expansion commerciale en Afrique de l'Ouest</h4>
+<p class="text-slate-400 text-[10px] mt-1">Secteur: Finance • 9.5k vues</p>
+</div>
+</div>
+<div class="flex gap-4 items-center">
+<span class="text-3xl font-black text-slate-200 dark:text-slate-700 italic">03</span>
+<div class="flex-1 border-b border-slate-100 dark:border-slate-800 pb-4">
+<h4 class="font-bold text-sm">Import/Export : Les nouvelles régulations douanières</h4>
+<p class="text-slate-400 text-[10px] mt-1">Secteur: Légal • 8.2k vues</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mx-4 mb-8 bg-[#1a1b3a] rounded-2xl p-8 text-center">
+<div class="size-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">mail</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-2">Restez informé</h3>
+<p class="text-slate-400 text-sm mb-6">Recevez nos analyses exclusives et les alertes de prix directement dans votre boîte mail.</p>
+<div class="flex flex-col gap-3">
+<input class="bg-white/5 border border-white/20 rounded-xl px-4 py-3 text-white focus:ring-primary focus:border-primary" placeholder="votre@email.com" type="email"/>
+<button class="bg-primary hover:bg-primary/90 text-white font-bold py-3 rounded-xl transition-colors">S'abonner à la newsletter</button>
+</div>
+</section>
+<section class="px-4 mb-8">
+<h3 class="text-xl font-bold mb-4">Derniers articles</h3>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="size-20 bg-cover bg-center rounded-xl flex-shrink-0" data-alt="Office workspace building facade" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDSwGp6CHDKq_yTu3Vi9i-H_Wv9DGO1RqfaogNoQXUmHvrRowCPcSGqYOWnZEbwTINnUGBeigScdBqMMlPcG4H7Tnz229HqTmbULHAILJOvRMNq_jSCHb7XvEOqVD9I03f-yzgvNx_98HXjuoujxXQ2MBa4fc_bTYMK-poOvnC722m5X9UoSgAJVEkWtA4lxjJMyfC3IvzAtdhigLYAFN0IPfMOUmZcwip0_b-7tWPUJNwmkuyru0msQt-HfDTBNLPWvOd4O17A0xA')"></div>
+<div class="flex flex-col justify-center">
+<h4 class="font-bold text-sm leading-tight mb-1">Impact du digital sur les marchés traditionnels</h4>
+<p class="text-slate-500 text-xs mb-1">Tech • Il y a 5 heures</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="size-20 bg-cover bg-center rounded-xl flex-shrink-0" data-alt="People shaking hands at a professional meeting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBi410O6rEyR1MnHIYtCS28nlREUCwxVsDfn2rHvHtvTiyzHD6DEUF1947o5ZKCOPR3v-U7DAOBiO8tRcj0fwC4BbDCpDId_Ox3DSGHxHDFxo1xDbwuYXVNlENzL-gaPTLT2rXfLDxsynwwjRVhQitu0XO2TLMFrqCdF0gNT0EkJdMRWkRkaJv-pI5ZUUtbu9T3ZeWLCUKSXCY7I_q8BCwKRJrRCeiR8jFzsHonXLvrugbOGvcWxXeI_BQhNunGZKrcLWvLf7iB_yY')"></div>
+<div class="flex flex-col justify-center">
+<h4 class="font-bold text-sm leading-tight mb-1">Partenariats stratégiques : La clé de la réussite</h4>
+<p class="text-slate-500 text-xs mb-1">Business • Il y a 1 jour</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="size-20 bg-cover bg-center rounded-xl flex-shrink-0" data-alt="Stacked coins and bills on a desk" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAyYkMSR_qgVI3nmN585gHGTIhSfYMpXj_TEwLkC0gKKZkwxBxIO9P_6aVroRluHWQ_KzoWUE6DMdqb2KwjFOLVhIhIF24HahYAZOdDrPlodunHTxY51CdDw9qssUUzLM5HnITsLMtsq_pEwW3sSGQOeucjgtRnqNnH0hIDg38IndwRasTEfmWBVlypLtUzgNch_XTgVIBm7p637Xcgxh7goIJ5NAsipPCOTOVtwer8Zv_ZodS4ZiTZ_jZ_9vu5fytB8ikO47NZx_g')"></div>
+<div class="flex flex-col justify-center">
+<h4 class="font-bold text-sm leading-tight mb-1">Gestion de trésorerie pour les grossistes</h4>
+<p class="text-slate-500 text-xs mb-1">Finance • Il y a 2 jours</p>
+</div>
+</div>
+</div>
+<button class="w-full mt-6 py-4 border border-slate-200 dark:border-slate-800 rounded-xl text-slate-600 dark:text-slate-400 font-bold text-sm">Charger plus d'articles</button>
+</section>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 px-4 pb-6 pt-3 flex justify-between items-center z-50">
+<a class="flex flex-col items-center gap-1 text-slate-400" href="index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium">Accueil</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="prices.html">
+<span class="material-symbols-outlined">trending_up</span>
+<span class="text-[10px] font-medium">Prix</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="blog_mobile.html">
+<span class="material-symbols-outlined fill-1">newspaper</span>
+<span class="text-[10px] font-bold">Blog</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium">Compte</span>
+</a>
+</nav>
+</body></html>
